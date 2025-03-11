@@ -25,7 +25,10 @@ body {
     color: #fff;
     padding: 30px;
 }
-
+.sidebar .photo img {
+    width: 100%;
+    border-radius: 50%;
+}
 .sidebar h2 {
     color: #fff;
     border-bottom: 2px solid #3498db;
@@ -42,6 +45,7 @@ body {
 .sidebar ul li {
     margin: 15px 0;
     font-size: 1.1em;
+    padding-right: 5px;
 }
 
 .sidebar a {
@@ -110,27 +114,4 @@ ul li {
     font-style: italic;
     color: #95a5a6;
     margin: 5px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar, .main-content {
-        width: 100%;
-    }
-
-    .sidebar {
-        text-align: center;
-    }
-
-    header h1 {
-        font-size: 2.2em;
-    }
-
-    header .tagline {
-        font-size: 1em;
-    }
 }
