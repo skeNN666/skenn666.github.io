@@ -17,7 +17,7 @@ body {
     align-items: center;
     height: 10px;
     width: 249mm;
-    background-color: #352ba5; 
+    background-color: #1b1b6c; 
     padding: 10px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .header {
-    background-color: #1b1b6c;
+    background-color: #13124f;
     padding: 30px;
     color: #ffffff;
     width: 901px;
@@ -133,22 +133,27 @@ hr {
 .messages-section {
     background-color: #f61067;
     color: white;
-    padding-left: 100px;
+    padding-left: 80px;
     height: 30px;
     font-size: 10px;
     display: flex;
     align-items: center;
 }
 
+.messages-section img {
+    margin: 0;
+    padding: 0;
+}
+
 .messages-button {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 .messages-count {
     background-color: #352ba5;
     padding-left: 5px;
-    width:15px;
+    width: 12px;
     border-radius: 50px;
 }
 
@@ -162,12 +167,15 @@ hr {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
+h3 {
+    margin-top: 20px;
+}
 .welcome-candidate h3 {
-    margin-bottom: 10px;
+    margin: 10px;
+    margin-top: 20px;
 }
 .input-greeting {
-    background-color: #1b1b6c;
+    background-color: #13124f;
     color: white;
     font-size: 12px;
     margin-top: 0;
@@ -198,7 +206,7 @@ hr {
 }
 
 .greeting-input {
-    background-color: #352ba5;
+    background-color: #1b1b6c;
     padding: 5px;
     border-top-color: #9090a5;
     border-bottom-color: #9090a5;
@@ -278,10 +286,16 @@ hr {
 }
 
 .footer {
-    background-color: #1b1b6c;
+    background-color: #13124f;
     color:white;
     height: 30px;
     padding-left: 10px;
     font-size: 12px;
     padding-top: 5px;
+    margin-bottom: 20px;
 }
+
+.footer p {
+    margin-bottom: 20px;
+}
+
