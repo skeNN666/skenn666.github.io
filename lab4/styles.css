@@ -5,7 +5,6 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    background-image: url('ancient-japan.jpg');
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -32,7 +31,6 @@ body {
     background-color: rgba(44, 62, 80, 0.9); 
     color: #fff;
     padding: 30px;
-    background-image: url('japanese-texture.jpg');
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
