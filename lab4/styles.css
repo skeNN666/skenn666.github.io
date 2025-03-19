@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -12,6 +13,8 @@ body {
     width: 210mm;
     height: 297mm;
     padding-left: 50vh;
+    border-color: #2c3e50;
+    border-radius: 8px;
 }
 
 .container {
@@ -21,8 +24,7 @@ body {
     background: rgba(255, 255, 255, 0.9); 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid black;
+    border: 1px solid #2c3e50;
 }
 
 /* Sidebar */
@@ -35,12 +37,13 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    border-radius: 8px;
 }
 
 .sidebar .photo img {
     width: 100%;
     border-radius: 50%;
-    border: 1px solid #black; 
+    border: 4px solid #3498db; /* Add a border to the photo */
 }
 
 .sidebar h2 {
@@ -78,18 +81,20 @@ body {
     font-style: italic;
 }
 
+/* Main Content */
 .main-content {
     width: 70%;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     background-image: url('soymbo.png');
     background-size: cover;
     background-position: center;
+    border-radius: 8px;
 }
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -106,8 +111,8 @@ header .tagline {
 
 h2 {
     border-bottom: 2px solid #2c3e50;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    padding-bottom: 0px;
+    margin-top: 10px;
     color: #2c3e50;
     font-size: 1.8em;
 }
@@ -132,4 +137,8 @@ ul li {
     font-style: italic;
     color: #2c3e50;
     margin: 5px 0;
+}
+
+.job {
+    margin-top: 0px;
 }
