@@ -81,6 +81,11 @@ body {
     font-style: italic;
 }
 
+.sidebar .shagnal .date {
+    color: #bdc3c7;
+    font-style: italic;
+}
+
 /* Main Content */
 .main-content {
     width: 70%;
@@ -124,13 +129,14 @@ h3 {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    padding-right: 20px;
 }
 
 ul li {
-    margin: 10px 0;
-    font-size: 1.1em;
+    margin: 20px 0;
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: bold;
 }
 
 .date {
@@ -142,3 +148,4 @@ ul li {
 .job {
     margin-top: 0px;
 }
+
