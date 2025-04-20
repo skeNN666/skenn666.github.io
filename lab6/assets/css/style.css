@@ -1097,7 +1097,7 @@
     }
   }
 .col-md-8 img{
-  height: 500px;
+  height: auto;
   width: 100%;
   padding-right: 45px;
 }
