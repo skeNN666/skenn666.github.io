@@ -695,6 +695,9 @@
   
   .position-absoute {
     margin: 0;
+    bottom: 0; 
+    left: 0;
+    z-index: 2;
   }
   
   .position-absoute>img {
