@@ -73,21 +73,20 @@ let distance = prompt("Зайг км-ээр оруулна уу:");
 let time = catchTime(Number(distance));
 alert(`Чоно ${time.minutes} минут ${time.seconds} секундэд гүйцнэ.`);
 
-
 function evenOddSplit(arr) {
-    if (!Array.isArray(arr)) return { even: [], odd: [] };
+  if (!Array.isArray(arr)) return { even: [], odd: [] };
 
-    const even = arr.filter(n => n % 2 === 0);
-    const odd = arr.filter(n => n % 2 !== 0);
-    return { even, odd };
+  const even = arr.filter(n => n % 2 === 0);
+  const odd = arr.filter(n => n % 2 !== 0);
+  return { even, odd };
 }
 
-// Example static array:
-let arr = [1, 2, 3, 4, 5, 6, 7];
-let result = evenOddSplit(arr);
-console.log("Тэгшүүд:", result.even);
-console.log("Сондгойнууд:", result.odd);
+let input = prompt("Тоонуудыг таслалаар тусгаарлан оруулна уу (ж: 1,2,3,4):");
+let arr = input.split(',').map(n => parseInt(n.trim())).filter(n => !isNaN(n));
 
+let result = evenOddSplit(arr);
+
+alert("Тэгшүүд: " + result.even.join(", ") + "\nСондгойнууд: " + result.odd.join(", "));
 
 function findApartment(num) {
     const apartmentsPerFloor = 4;
