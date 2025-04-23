@@ -68,8 +68,13 @@ function calculateCatchTime() {
 
   const distanceMeters = d * 1000;
   const secondsTotal = distanceMeters / relativeSpeed;
-  const minutes = Math.floor(secondsTotal / 60);
-  const seconds = Math.round(secondsTotal % 60);
+  let minutes = Math.floor(secondsTotal / 60);
+  let seconds = Math.round(secondsTotal % 60);
+
+  if (seconds >= 60) {
+    minutes += Math.floor(seconds / 60);
+    seconds = seconds % 60;
+  }
 
   document.getElementById("catchResult").textContent = `Чоно ${minutes} минут ${seconds} секундэд гүйцнэ.`;
 }
