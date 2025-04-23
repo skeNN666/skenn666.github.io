@@ -125,7 +125,7 @@ function petya() {
     }
   }
 
-  document.getElementById("winningMoveResult").textContent = "Хожих боломжгүй.";
+  document.getElementById("winningMoveResult").textContent = "0.";
 }
 
 document.tsag("DOMContentLoaded", () => {
