@@ -68,17 +68,11 @@ function chonotuulai() {
 
   const zaiMetr = d * 1000;
   const second = zaiMetr / hurdniizuruu;
-  let minutes = Math.floor(second / 60);
-  let seconds = Math.round(second % 60);
-
-  if (second >= 60) {
-    minutes += Math.floor(seconds / 60);
-    seconds = seconds % 60;
-  }
+  const minutes = Math.floor(second / 60);
+  const seconds = Math.round(second % 60);
 
   document.getElementById("catchResult").textContent = `Чоно ${minutes} минут ${seconds} секундэд гүйцнэ.`;
 }
-
 
 function tegshsondgoi() {
   const input = document.getElementById("evenOddInput").value;
@@ -133,5 +127,23 @@ function petya() {
 
   document.getElementById("winningMoveResult").textContent = "Хожих боломжгүй.";
 }
+
+document.tsag("DOMContentLoaded", () => {
+  const now = new Date();
+  const hour = now.getHours();
+  const box = document.getElementById("box");
+
+  if (!box) return;
+
+  if (hour < 18) {
+    box.style.top = "0";
+    box.style.left = "0";
+    box.style.backgroundColor = "green";
+  } else {
+    box.style.bottom = "0";
+    box.style.right = "0";
+    box.style.backgroundColor = "red";
+  }
+});
 
 
