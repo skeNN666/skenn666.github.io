@@ -1,4 +1,4 @@
-function checkPalindrome() {
+function Palindrome() {
   const ner = document.getElementById("nameInput").value;
   if (!ner || typeof ner !== "string") {
     document.getElementById("palindromeResult").textContent = "Нэр буруу байна";
@@ -10,12 +10,12 @@ function checkPalindrome() {
 }
 
 function sumDigits() {
-  const input = document.getElementById("digitInput").value;
-  if (isNaN(input)) {
+  const too = document.getElementById("digitInput").value;
+  if (isNaN(too)) {
     document.getElementById("digitResult").textContent = "Буруу тоо байна!";
     return;
   }
-  const sum = Math.abs(input).toString().split('').reduce((a, b) => a + Number(b), 0);
+  const sum = Math.abs(too).toString().split('').reduce((a, b) => a + Number(b), 0);
   document.getElementById("digitResult").textContent = "Цифрүүдийн нийлбэр: " + sum;
 }
 
@@ -26,7 +26,7 @@ function isPrime(n) {
   return true;
 }
 
-function decomposePrime() {
+function Primezadlah() {
   const n = Number(document.getElementById("primeInput").value);
   if (isNaN(n) || n < 2) {
     document.getElementById("primeResult").textContent = "2-оос их тоо оруулна уу.";
@@ -55,23 +55,23 @@ function decomposePrime() {
   document.getElementById("primeResult").textContent = results.length ? results[0].join(" + ") : "Задалж болохгүй.";
 }
 
-function calculateCatchTime() {
+function chonotuulai() {
   const d = Number(document.getElementById("distanceInput").value);
   if (isNaN(d) || d <= 0) {
     document.getElementById("catchResult").textContent = "Зөв зай оруулна уу.";
     return;
   }
 
-  const speedWolf = 25 * 1000 / 3600;
-  const speedRabbit = 18 * 1000 / 3600;
-  const relativeSpeed = speedWolf - speedRabbit;
+  const hurdchono = 25 * 1000 / 3600;
+  const hurdtuulai = 18 * 1000 / 3600;
+  const hurdniizuruu = hurdchono - hurdtuulai;
 
-  const distanceMeters = d * 1000;
-  const secondsTotal = distanceMeters / relativeSpeed;
-  let minutes = Math.floor(secondsTotal / 60);
-  let seconds = Math.round(secondsTotal % 60);
+  const zaiMetr = d * 1000;
+  const second = zaiMetr / hurdniizuruu;
+  let minutes = Math.floor(second / 60);
+  let seconds = Math.round(second % 60);
 
-  if (seconds >= 60) {
+  if (second >= 60) {
     minutes += Math.floor(seconds / 60);
     seconds = seconds % 60;
   }
@@ -79,7 +79,8 @@ function calculateCatchTime() {
   document.getElementById("catchResult").textContent = `Чоно ${minutes} минут ${seconds} секундэд гүйцнэ.`;
 }
 
-function splitEvenOdd() {
+
+function tegshsondgoi() {
   const input = document.getElementById("evenOddInput").value;
   const arr = input.split(',').map(n => parseInt(n.trim())).filter(n => !isNaN(n));
 
@@ -114,7 +115,7 @@ function findApt() {
   document.getElementById("aptResult").textContent = `${entrance}-р орц, ${floor}-р давхар, ${door}-р хаалга`;
 }
 
-function getWinningMove() {
+function petya() {
   const n = Number(document.getElementById("coinsInput").value);
   const max = Number(document.getElementById("maxTakeInput").value);
   if (isNaN(n) || isNaN(max) || n <= 0 || max <= 0) {
@@ -132,4 +133,5 @@ function getWinningMove() {
 
   document.getElementById("winningMoveResult").textContent = "Хожих боломжгүй.";
 }
+
 
