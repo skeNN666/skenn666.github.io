@@ -12,6 +12,7 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border-left: 6px solid #4a90e2;
     transition: transform 0.2s;
+    border: 1px solid #ccc;
   }
   
   section:hover {
