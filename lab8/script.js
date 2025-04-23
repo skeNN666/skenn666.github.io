@@ -145,5 +145,3 @@ document.tsag("DOMContentLoaded", () => {
     box.style.backgroundColor = "red";
   }
 });
-
-
