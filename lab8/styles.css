@@ -54,19 +54,6 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
   
-  .animals {
-    font-size: 30px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-    margin: 10px 0;
-  }
-  
-  .animals span {
-    animation: hop 2s ease-in-out infinite;
-  }
-  
   @keyframes hop {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -76,4 +63,3 @@ body {
     margin-top: 10px;
     color: #555;
   }
-  
