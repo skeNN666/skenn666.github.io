@@ -58,23 +58,6 @@
     <button onclick="petya()">Тооцоолох</button>
     <p id="winningMoveResult"></p>
   </section>
-
-  <script>
-    const now = new Date();
-    const hour = now.getHours();
-    const box = document.getElementById('box');
-
-    if (hour < 12) {
-      box.style.top = "0";
-      box.style.left = "0";
-      box.style.backgroundColor = "green";
-    } else {
-      box.style.bottom = "0";
-      box.style.right = "0";
-      box.style.backgroundColor = "red";
-    }
-  </script>
-
   <script src="script.js" defer></script>
 </body>
 </html>
