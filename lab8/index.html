@@ -37,7 +37,7 @@
   <section>
     <h2>Палиндром шалгах</h2>
     <input id="nameInput" placeholder="Нэрээ оруулна уу">
-    <button onclick="checkPalindrome()">Шалгах</button>
+    <button onclick="Palindrome()">Шалгах</button>
     <p id="palindromeResult"></p>
   </section>
 
@@ -51,21 +51,21 @@
   <section>
     <h2>Анхны тоон задлал</h2>
     <input id="primeInput" placeholder="Тоо оруулна уу">
-    <button onclick="decomposePrime()">Задлах</button>
+    <button onclick="Primezadlah()">Задлах</button>
     <p id="primeResult"></p>
   </section>
 
   <section>
     <h2>Чоно туулайг хэзээ гүйцэх вэ?</h2>
     <input id="distanceInput" placeholder="Зай км-ээр">
-    <button onclick="calculateCatchTime()">Тооцоолох</button>
+    <button onclick="chonotuulai()">Тооцоолох</button>
     <p id="catchResult"></p>
   </section>
 
   <section>
     <h2>Тэгш ба сондгой хуваах</h2>
     <input id="evenOddInput" placeholder="Ж: 1,2,3,4">
-    <button onclick="splitEvenOdd()">Хуваах</button>
+    <button onclick="tegshsondgoi()">Хуваах</button>
     <p id="evenOddResult"></p>
   </section>
 
@@ -80,12 +80,11 @@
     <h2>Петя яаж хожих вэ?</h2>
     <input id="coinsInput" placeholder="Нийт зоос">
     <input id="maxTakeInput" placeholder="Хамгийн ихдээ авах">
-    <button onclick="getWinningMove()">Тооцоолох</button>
+    <button onclick="petya()">Тооцоолох</button>
     <p id="winningMoveResult"></p>
   </section>
 
   <script>
-    // Box logic here
     const now = new Date();
     const hour = now.getHours();
     const box = document.getElementById('box');
