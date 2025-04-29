@@ -75,14 +75,11 @@ body {
     transform: translateY(-2px);
   }
   
-  /* Light Mode Button Styles */
   .day button {
     background: #fff;
     color: #000;
     box-shadow: 2px 2px 5px #ccc;
   }
-  
-  /* Dark Mode Button Styles */
   .night button {
     background: #2c2f48;
     color: #fff;
