@@ -101,7 +101,7 @@ body {
     grid-column: span 3;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 16px;
   }
   
   select {
@@ -109,21 +109,35 @@ body {
     padding: 5px;
     border-radius: 8px;
   }
+
+body.day select {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+body.night select {
+  background-color: #2c2f48; 
+  color: #ffffff;
+  border: 1px solid #444;
+  box-shadow: 2px 2px 5px #000;
+}
+
   
-  button:nth-child(10), 
-  button:nth-child(11), 
-  button:nth-child(12) {
+button:nth-child(10), 
+button:nth-child(11), 
+button:nth-child(12) {
     grid-column: span 1; 
-  }
+}
   
-  button:nth-child(13) {
+button:nth-child(13) {
     grid-column: span 3; 
-    margin-top: 15px;
-  }
+}
   
-  #result {
+#result {
     margin-top: 15px;
     font-size: 16px;
     text-align: center;
-  }
+}
   
