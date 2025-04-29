@@ -128,7 +128,7 @@ function petya() {
   document.getElementById("winningMoveResult").textContent = "0.";
 }
 
-document.tsag("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const now = new Date();
   const hour = now.getHours();
   const box = document.getElementById("box");
