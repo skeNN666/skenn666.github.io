@@ -19,9 +19,21 @@ body {
   
   body.night {
     background-image: url(night.jpg);
+    background-size: cover;             
+    background-repeat: no-repeat;        
+    background-position: center center; 
+    background-attachment: fixed;       
+    min-height: 100vh;                  
+    width: 100%;
   }
   body.day {
     background-image: url(day.jpg);
+    background-size: cover;             
+    background-repeat: no-repeat;        
+    background-position: center center; 
+    background-attachment: fixed;       
+    min-height: 100vh;                  
+    width: 100%;
   }
   @font-face {
     font-family: 'Seven_segment';
