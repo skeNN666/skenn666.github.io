@@ -125,7 +125,7 @@ function petya() {
     }
   }
 
-  document.getElementById("winningMoveResult").textContent = "0.";
+  document.getElementById("winningMoveResult").textContent = "Хожих боломжгүй.";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -135,13 +135,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!box) return;
 
-  if (hour < 18) {
+  box.style.position = "fixed";
+
+  if (hour >= 8 && hour < 20) {
+    // Daytime: green, top-left
     box.style.top = "0";
     box.style.left = "0";
+    box.style.bottom = "";
+    box.style.right = "";
     box.style.backgroundColor = "green";
   } else {
+    // Nighttime: red, bottom-right
     box.style.bottom = "0";
     box.style.right = "0";
+    box.style.top = "";
+    box.style.left = "";
     box.style.backgroundColor = "red";
   }
 });
+
