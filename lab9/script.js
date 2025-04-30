@@ -42,7 +42,18 @@ const exchangeArray = [
   }
   
   function appendNumber(num) {
-    currentInput += num;
+    if (currentInput === "0" && num === "0") return;
+  
+    if (currentInput === "0" && num !== ".") {
+      currentInput = num;
+    } else if (num === ".") {
+      if (!currentInput.includes(".")) {
+        currentInput += num;
+      }
+    } else {
+      currentInput += num;
+    }
+  
     display.textContent = currentInput;
   }
   
