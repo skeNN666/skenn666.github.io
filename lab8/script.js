@@ -135,6 +135,27 @@ function petya() {
   document.getElementById("winningMoveResult").textContent = "Хожих боломжгүй.";
 }
 
+function HIEHoloh() {
+  const input = document.getElementById("HIEHinput").value;
+  const numbers = input.split(',').map(n => parseInt(n.trim())).filter(n => !isNaN(n));
+
+  if (numbers.length < 2) {
+    document.getElementById("HIEHhariu").textContent = "Хоёроос дээш тоо оруулна уу.";
+    return;
+  }
+
+  function HIEH(a, b) {
+    return b === 0 ? a : HIEH(b, a % b);
+  }
+
+  let result = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    result = HIEH(result, numbers[i]);
+  }
+
+  document.getElementById("HIEHhariu").textContent = "Хамгийн их ерөнхий хуваагч: " + result;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const now = new Date();
   const hour = now.getHours();
