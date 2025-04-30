@@ -34,6 +34,7 @@ function Primezadlah() {
   }
 
   const results = [];
+
   function backtrack(target, start, path) {
     const sum = path.reduce((a, b) => a + b, 0);
     if (sum === target) {
@@ -46,13 +47,19 @@ function Primezadlah() {
       if (isPrime(i)) {
         path.push(i);
         backtrack(target, i, path);
-        path.pop();
+        path.pop(); // backtrack
       }
     }
   }
 
   backtrack(n, 2, []);
-  document.getElementById("primeResult").textContent = results.length ? results[0].join(" + ") : "Задалж болохгүй.";
+
+  if (results.length) {
+    document.getElementById("primeResult").innerHTML =
+      results.map(path => path.join(" + ")).join("<br>");
+  } else {
+    document.getElementById("primeResult").textContent = "Задалж болохгүй.";
+  }
 }
 
 function chonotuulai() {
