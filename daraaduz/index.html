@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Уучлаарай!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #fff0f5;
+    }
+    #mainGif, #happyGif {
+      width: 200px;
+      margin: 20px auto;
+    }
+    button {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    #yesBtn {
+      background-color: #90ee90;
+      border: none;
+    }
+    #noBtn {
+      background-color: #f08080;
+      border: none;
+    }
+    #countDisplay {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Уучлаарай, намайг уучлаарай!</h1>
+  <img id="mainGif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGZpMWdrMWd4dmFhZXU5ODkwN2s4OHY3emIwb2VnNjI4ZTRyaWR1MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MaJSj1TdcHBaQ/giphy.gif" alt="Гуйж байгаа gif">
+
+  <div>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <div id="countDisplay">"No" дээр дарсан тоо: 0</div>
+
+  <div id="happySection" style="display:none;">
+    <img id="happyGif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGVodnNyNm10MHNka2NyOHJ0ZmJxdGFjMGFqazl1M2I5Ym5ydjh0bSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oriNYQX2lCzY45fFe/giphy.gif" alt="Баярлаж байгаа gif">
+    <h2>Баярлалаа, чи үнэхээр хөөрхөн!</h2>
+  </div>
+
+  <script>
+    let noCount = 0;
+    const noBtn = document.getElementById('noBtn');
+    const yesBtn = document.getElementById('yesBtn');
+    const countDisplay = document.getElementById('countDisplay');
+    const happySection = document.getElementById('happySection');
+
+    noBtn.addEventListener('click', () => {
+      noCount++;
+      countDisplay.textContent = "No" дээр дарсан тоо: ${noCount};
+      let newSize = 18 + noCount * 2;
+      yesBtn.style.fontSize = ${newSize}px;
+    });
+
+    yesBtn.addEventListener('click', () => {
+      happySection.style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
