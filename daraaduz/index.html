@@ -19,6 +19,7 @@
       margin: 10px;
       font-size: 18px;
       cursor: pointer;
+      transition: all 0.3s ease;
     }
     #yesBtn {
       background-color: #90ee90;
@@ -61,13 +62,30 @@
 
     noBtn.addEventListener('click', () => {
       noCount++;
-      countDisplay.textContent = "No" дээр дарсан тоо: ${noCount};
-      let newSize = 18 + noCount * 2;
-      yesBtn.style.fontSize = ${newSize}px;
+      countDisplay.textContent = `"No" дээр дарсан тоо: ${noCount}`;
+      
+      // Increase yes button size
+      let currentYesSize = parseInt(window.getComputedStyle(yesBtn).fontSize);
+      yesBtn.style.fontSize = `${currentYesSize + 5}px`;
+      
+      // Decrease no button size
+      let currentNoSize = parseInt(window.getComputedStyle(noBtn).fontSize);
+      if (currentNoSize > 10) {
+        noBtn.style.fontSize = `${currentNoSize - 2}px`;
+      }
+      
+      // Hide no button after 5 clicks
+      if (noCount >= 5) {
+        noBtn.style.display = 'none';
+      }
     });
 
     yesBtn.addEventListener('click', () => {
       happySection.style.display = 'block';
+      // Hide the buttons after yes is clicked
+      yesBtn.style.display = 'none';
+      noBtn.style.display = 'none';
+      countDisplay.style.display = 'none';
     });
   </script>
 
