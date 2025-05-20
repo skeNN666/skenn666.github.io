@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="Hangman.css">
+</head>
+<body>
+  <div class="main">
+  <div class="left-panel">
+    <div id="meaning"></div>
+    <div id="word" style="font-size: 2rem; margin: 20px 0 0 0;"></div>
+  </div>
+  <div class="right-panel">
+    <div id="wrong" style="color: red;"></div>
+    <div id="message" style="color: green;"></div>
+    <button id="restartBtn" style="display: none;">↺</button>
+    <div id="stats" style="margin-top: 10px;"></div>
+    <div id="timer" style="font-weight: bold;"></div>
+  </div>
+  <a href="leaderboard.html">👑</a>
+</div>
+  <audio id="correctSound" src="correct.mp3"></audio>
+  <audio id="wrongSound" src="wrong.mp3"></audio>
+
+  <div id="hangman-container" style="position: relative; width: 200px; height: 250px;">
+    <img src="gallows.jpg" style="position: absolute; top: 0; left: 40vw; width: 350px; height: 400px;">
+    <div class="hole"></div>
+    <img id="head" src="head.png" style="position: absolute; top: 14.4vh; left: 53vw; width: 50px; display: none;">
+    <img id="body" src="body.png" style="position: absolute; top: 21.2vh; left: 52vw; width: 75px; display: none;">
+    <img id="leg-left" src="leg-left.png" style="position: absolute; top: 32.5vh; left: 52.3vw; width: 30px; display: none;">
+    <img id="leg-right" src="leg-right.png" style="position: absolute; top: 32.5vh; left: 54.3vw; width: 30px; display: none;">
+    <div class="buttons">
+      <button onclick="pressKey('А')">А</button>
+      <button onclick="pressKey('Б')">Б</button>
+      <button onclick="pressKey('В')">В</button>
+      <button onclick="pressKey('Г')">Г</button>
+      <button onclick="pressKey('Д')">Д</button>
+      <button onclick="pressKey('Е')">Е</button>
+      <button onclick="pressKey('Ё')">Ё</button>
+      <button onclick="pressKey('Ж')">Ж</button>
+      <button onclick="pressKey('З')">З</button>
+      <button onclick="pressKey('И')">И</button>
+      <button onclick="pressKey('Й')">Й</button>
+      <button onclick="pressKey('К')">К</button>
+      <button onclick="pressKey('Л')">Л</button>
+      <button onclick="pressKey('М')">М</button>
+      <button onclick="pressKey('Н')">Н</button>
+      <button onclick="pressKey('О')">О</button>
+      <button onclick="pressKey('Ө')">Ө</button>
+      <button onclick="pressKey('П')">П</button>
+      <button onclick="pressKey('Р')">Р</button>
+      <button onclick="pressKey('С')">С</button>
+      <button onclick="pressKey('Т')">Т</button>
+      <button onclick="pressKey('У')">У</button>
+      <button onclick="pressKey('Ү')">Ү</button>
+      <button onclick="pressKey('Ф')">Ф</button>
+      <button onclick="pressKey('Х')">Х</button>
+      <button onclick="pressKey('Ц')">Ц</button>
+      <button onclick="pressKey('Ч')">Ч</button>
+      <button onclick="pressKey('Ш')">Ш</button>
+      <button onclick="pressKey('Щ')">Щ</button>
+      <button onclick="pressKey('Ъ')">Ъ</button>
+      <button onclick="pressKey('Ы')">Ы</button>
+      <button onclick="pressKey('Ь')">Ь</button>
+      <button onclick="pressKey('Э')">Э</button>
+      <button onclick="pressKey('Ю')">Ю</button>
+      <button onclick="pressKey('Я')">Я</button>
+    </div>
+  </div>
+  <script src="Hangman.js"></script>
+</body>
+</html>

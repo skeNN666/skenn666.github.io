@@ -1,0 +1,61 @@
+body{
+  background-image: url(lebronigduujlehgazar.jpg);
+  background-size: cover;
+}
+
+.main a{
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  font-size: 50px;
+}
+button{
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  background-color: rgb(182, 12, 111);
+  border-radius: 10px;
+}
+.buttons{
+  width: 550px;
+  text-align: center;
+  margin: 50px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px 5px white;
+  backdrop-filter: blur(20px);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left align text */
+  flex-grow: 1; /* take available left space */
+}
+
+#meaning {
+  margin-bottom: 10px;
+}
+
+#word {
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  width: 300px; 
+  margin-top: 60px;
+}
+
