@@ -14,7 +14,7 @@ button{
   width: 35px;
   height: 35px;
   margin: 5px;
-  background-color: rgb(182, 12, 111);
+  background-color: rgb(0, 131, 72);
   border-radius: 10px;
 }
 .buttons{
@@ -37,8 +37,8 @@ button{
 .left-panel {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Left align text */
-  flex-grow: 1; /* take available left space */
+  align-items: flex-start; 
+  flex-grow: 1;
 }
 
 #meaning {
